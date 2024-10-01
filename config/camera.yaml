@@ -1,0 +1,10 @@
+camera:
+    width: 224
+    height: 224
+    fov: 57  # deg
+    fov_error: 3  # deg
+    eye_position: [0, 0, 0.67]
+    target_position: [0, 0, 0]
+    up_vector: [-1, 0, 0]
+    near_val: 0.105  # meter
+    far_val: 10  # meter
