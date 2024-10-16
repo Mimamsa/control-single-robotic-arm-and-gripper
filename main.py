@@ -9,7 +9,6 @@ import random
 from datetime import datetime
 import pybullet_data
 from collections import namedtuple
-from attrdict import AttrDict
 from scipy.spatial.transform import Rotation as R
 import yaml
 import click
@@ -46,7 +45,7 @@ class RobotArmSim():
         self.joint_type_list = ["REVOLUTE", "PRISMATIC", "SPHERICAL", "PLANAR", "FIXED"]
         self.joint_info = namedtuple("jointInfo", ["id", "name", "type", "lowerLimit", "upperLimit", "maxForce", "maxVelocity", "controllable"])
 
-        self.joints = AttrDict()
+        self.joints = dict()
         for i in range(self.num_joints):
             info = p.getJointInfo(self.robot, i)
             jointID = info[0]

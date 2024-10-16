@@ -1,6 +1,6 @@
 # Control Single Robotic Arm and Gripper in PyBullet
 
-This repository is a minified version for controlling robotic arm and gripper in PyBullet.
+This repository is a minified version for controlling robotic arm and gripper in PyBullet, for purpose of learning.
 
 Currently we have the following robotic arm and gripper combinations:
 

@@ -108,7 +108,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://tm_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl"/>
+        <mesh filename="../tm_description/meshes/tm5-900/collision/tm5-900_arm1_c.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -166,7 +166,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://tm_description/meshes/tm5-900/collision/tmr_100w_01_c.stl"/>
+        <mesh filename="../tm_description/meshes/tm5-900/collision/tmr_100w_01_c.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -208,7 +208,7 @@
   <joint name="wrist_3_joint" type="revolute">
     <parent link="link_5"/>
     <child link="link_6"/>
-    <origin rpy="1.570796 -0.000000 0.000000" xyz="0.000000 -0.113150 0.000000"/>
+    <origin rpy="1.570796 0.000000 0.000000" xyz="0.000000 -0.113150 0.000000"/>
     <axis xyz="0 0 1"/>
     <!--limit-->
     <limit effort="43" lower="-4.71238898038469" upper="4.71238898038469" velocity="3.9269908169872414"/>
@@ -309,7 +309,7 @@
       </geometry>
     </collision>
   </link>
-  
+
   <link name="hande_right_finger">
     <contact>
       <lateral_friction value="1.0"/>
@@ -338,7 +338,7 @@
       </geometry>
     </collision>
   </link>
-  
+
   <joint name="hande_left_finger_joint" type="prismatic">
     <origin rpy="0 0 0" xyz="0 0 0.099"/>
     <parent link="hand_e_link"/>
@@ -346,7 +346,7 @@
     <axis xyz="-1 0 0"/>
     <limit effort="130" lower="0" upper="0.025" velocity="0.15"/>
   </joint>
- 
+
   <joint name="hande_right_finger_joint" type="prismatic">
     <origin rpy="0 0 0" xyz="0 0 0.099"/>
     <parent link="hand_e_link"/>
@@ -363,5 +363,6 @@
     <child link="base"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
+
 </robot>
 
